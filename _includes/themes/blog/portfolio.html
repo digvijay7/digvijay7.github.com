@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Bootstrap styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Portfolio CSS -->
+    <link href="{{ ASSET_PATH }}/css/portfolio.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">{{ site.author.name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="portfolio-header">
+      <div class="header-content">
+        <h1 class="name">{{ site.author.name }}</h1>
+        <h2 class="tagline">GEN AI CONTENT CREATOR</h2>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="portfolio-content">
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2 class="section-title">PORTFOLIO</h2>
+          
+          <!-- Category Tabs -->
+          <ul class="nav nav-tabs category-tabs" id="categoryTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="educational-tab" data-toggle="tab" href="#educational" role="tab">EDUCATIONAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="creative-tab" data-toggle="tab" href="#creative" role="tab">CREATIVE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="technical-tab" data-toggle="tab" href="#technical" role="tab">TECHNICAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="all-tab" data-toggle="tab" href="#all" role="tab">ALL VIDEOS</a>
+            </li>
+          </ul>
+          
+          <!-- Tab Content -->
+          <div class="tab-content" id="categoryTabContent">
+            <!-- Educational Videos -->
+            <div class="tab-pane fade show active" id="educational" role="tabpanel">
+              <div class="row video-grid">
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="FMiu0IJxxHU">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/FMiu0IJxxHU/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Krishna Musings Video 1</h3>
+                      <div class="video-meta">
+                        <span class="channel">Krishna Musings</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="jsGOxE3-wp4">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/jsGOxE3-wp4/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Krishna Musings Video 2</h3>
+                      <div class="video-meta">
+                        <span class="channel">Krishna Musings</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="eNwosEBjWmc">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/eNwosEBjWmc/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Educational Content</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Creative Videos -->
+            <div class="tab-pane fade" id="creative" role="tabpanel">
+              <div class="row video-grid">
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="J-hSugrkDnA">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/J-hSugrkDnA/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Creative AI Project</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="u6Ttk4YL81k">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/u6Ttk4YL81k/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">AI Generated Art</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="bYSpq_AgMDk">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/bYSpq_AgMDk/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Creative Applications</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Technical Videos -->
+            <div class="tab-pane fade" id="technical" role="tabpanel">
+              <div class="row video-grid">
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="9JIHTRCIqmQ">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/9JIHTRCIqmQ/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Technical Overview</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="mvIULhnctoU">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/mvIULhnctoU/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Advanced AI Techniques</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="YMq-fvGcmN4">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/YMq-fvGcmN4/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Technical Implementation</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- All Videos -->
+            <div class="tab-pane fade" id="all" role="tabpanel">
+              <div class="row video-grid">
+                <!-- First row -->
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="FMiu0IJxxHU">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/FMiu0IJxxHU/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Krishna Musings Video 1</h3>
+                      <div class="video-meta">
+                        <span class="channel">Krishna Musings</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="jsGOxE3-wp4">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/jsGOxE3-wp4/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Krishna Musings Video 2</h3>
+                      <div class="video-meta">
+                        <span class="channel">Krishna Musings</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="eNwosEBjWmc">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/eNwosEBjWmc/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Educational Content</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Second row -->
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="J-hSugrkDnA">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/J-hSugrkDnA/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Creative AI Project</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="u6Ttk4YL81k">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/u6Ttk4YL81k/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">AI Generated Art</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="bYSpq_AgMDk">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/bYSpq_AgMDk/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Creative Applications</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Third row -->
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="9JIHTRCIqmQ">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/9JIHTRCIqmQ/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Technical Overview</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="mvIULhnctoU">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/mvIULhnctoU/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Advanced AI Techniques</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="YMq-fvGcmN4">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/YMq-fvGcmN4/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Technical Implementation</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fourth row -->
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="c9IsIG6ZOBU">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/c9IsIG6ZOBU/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Exploring AI Possibilities</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 video-item">
+                  <div class="video-card">
+                    <div class="video-container" data-video-id="p_VeO5cjdew">
+                      <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/p_VeO5cjdew/maxresdefault.jpg');">
+                        <div class="play-button">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h3 class="video-title">Future of AI</h3>
+                      <div class="video-meta">
+                        <span class="channel">Gen AI Channel</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- About Section -->
+      <section id="about" class="section dark">
+        <div class="container">
+          <h2 class="section-title">ABOUT ME</h2>
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="https://via.placeholder.com/600x600/333333/dddddd" alt="Profile Image" class="img-fluid">
+            </div>
+            <div class="about-content">
+              <p>I create engaging GenAI content, specializing in educational and creative videos that showcase the capabilities of artificial intelligence. With a deep understanding of various AI technologies, I explore their applications in different domains through my content.</p>
+              
+              <p>My videos aim to make complex AI concepts accessible to everyone, demonstrating real-world applications and creative possibilities. Whether you're interested in the educational aspects of AI or looking for inspiration on creative applications, my content covers various dimensions of this rapidly evolving field.</p>
+              
+              <p>Stay tuned for regular updates and new videos exploring the fascinating world of AI.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">CONTACT</h2>
+          <div class="section-content">
+            <p>Interested in collaborating or have questions about my work? Feel free to reach out!</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/{{ site.author.github }}" target="_blank">github.com/{{ site.author.github }}</a>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">twitter.com/{{ site.author.twitter }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="portfolio-footer">
+      <div class="container">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/portfolio.js"></script>
+  </body>
+</html>

@@ -1,12 +1,38 @@
 ---
 layout: page
-title: Digvijay's Blog
-tagline: 
+title: Digvijay's AI Portfolio
+tagline: Gen AI Content Creator
 ---
 {% include JB/setup %}
-Welcome!
-This site is a work in progress. This blog is hosted on github - with the help of jekyll to serve the static content. 
-I will eventually start to write some posts and share some interestig videos. Till then I will be experimenting with the ui/ux for the website.
-Feel free to checkout the github repo in case you want to see the source code. That's all from me for the time being.
-Until the next update ... enjoy this cheesy song from the 1980s. 
-<h1>;)</h1>
+# Welcome to My Portfolio!
+
+I create engaging GenAI content, specializing in educational and creative videos that showcase the capabilities of artificial intelligence.
+
+<div class="text-center mt-5">
+  <a href="/portfolio" class="btn btn-primary btn-lg">View My Portfolio</a>
+</div>
+
+<style>
+.btn-primary {
+  background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.4);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+</style>
