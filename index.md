@@ -6,6 +6,7 @@ tagline: Gen AI Content Creator
 {% include JB/setup %}
 
 <div class="home-hero">
+  <div class="artistic-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title">Welcome to My AI Portfolio</h1>
     <h2 class="hero-subtitle">GEN AI CONTENT CREATOR</h2>
@@ -21,14 +22,41 @@ body {
   background-color: #121212;
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+#wrap {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px; /* Space for footer */
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: rgba(18, 18, 18, 0.9);
   padding: 20px 0;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 20px;
 }
 
 .navbar-brand {
@@ -64,11 +92,48 @@ body {
   background-position: center;
   background-blend-mode: overlay;
   position: relative;
+  overflow: hidden;
+}
+
+.artistic-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://images.unsplash.com/photo-1621075160523-b936ad96132a?q=80&w=1770&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  mix-blend-mode: color-dodge;
+  animation: pulse 15s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
 }
 
 .hero-content {
   max-width: 800px;
   text-align: center;
+  position: relative;
+  z-index: 10;
+  padding: 40px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
@@ -136,6 +201,10 @@ body {
   color: rgba(255, 255, 255, 0.7);
   padding: 30px 0;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 @keyframes fadeInUp {
@@ -161,6 +230,15 @@ body {
   .hero-text {
     font-size: 1rem;
   }
+  
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }
-</style>
 </style>
