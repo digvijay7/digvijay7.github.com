@@ -47,14 +47,53 @@ function initScrollAnimations() {
 
 // Function to handle video player functionality
 function initVideos() {
+  console.log("Initializing videos");
   // Get all video containers
   const videoContainers = document.querySelectorAll('.video-container');
   
   // Add click event to each container to load YouTube iframe
   videoContainers.forEach(container => {
-    container.addEventListener('click', function() {
-      const videoId = this.dataset.videoId;
-      if(!videoId) return;
+    // Make sure thumbnails are loaded
+    const videoId = container.dataset.videoId;
+    if(!videoId) return;
+    
+    // Get or create the thumbnail
+    let thumbnail = container.querySelector('.video-thumbnail');
+    if (!thumbnail) {
+      thumbnail = document.createElement('div');
+      thumbnail.className = 'video-thumbnail';
+      container.appendChild(thumbnail);
+    }
+    
+    // Set the thumbnail background
+    try {
+      // First try the maxresdefault image
+      const imgUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+      thumbnail.style.backgroundImage = `url('${imgUrl}')`;
+      
+      // Add a fallback in case the maxresdefault isn't available
+      const img = new Image();
+      img.onerror = () => {
+        thumbnail.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/hqdefault.jpg')`;
+      };
+      img.src = imgUrl;
+    } catch (e) {
+      console.error("Error loading thumbnail:", e);
+      thumbnail.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/hqdefault.jpg')`;
+    }
+    
+    // Add play button if it doesn't exist
+    if (!container.querySelector('.play-button')) {
+      const playButton = document.createElement('div');
+      playButton.className = 'play-button';
+      playButton.innerHTML = '<i class="fas fa-play"></i>';
+      thumbnail.appendChild(playButton);
+    }
+    
+    // Add click event listener
+    container.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log("Video container clicked:", videoId);
       
       // Create iframe element
       const iframe = document.createElement('iframe');
@@ -64,7 +103,6 @@ function initVideos() {
       iframe.setAttribute('allowfullscreen', '');
       
       // Remove thumbnail and play button
-      const thumbnail = this.querySelector('.video-thumbnail');
       if(thumbnail) thumbnail.remove();
       
       // Add iframe to container
@@ -73,33 +111,6 @@ function initVideos() {
       // Mark container as loaded
       this.classList.add('loaded');
     });
-  });
-  
-  // Create an Intersection Observer to detect when video cards are visible
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const container = entry.target;
-        
-        // Lazy load the thumbnail if needed
-        const thumbnail = container.querySelector('.video-thumbnail');
-        if (thumbnail && !thumbnail.style.backgroundImage) {
-          const videoId = container.dataset.videoId;
-          thumbnail.style.backgroundImage = `url('https://img.youtube.com/vi/${videoId}/maxresdefault.jpg')`;
-        }
-        
-        // Stop observing
-        observer.unobserve(container);
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '100px'
-  });
-  
-  // Observe each video container
-  videoContainers.forEach(container => {
-    observer.observe(container);
   });
 }
 
