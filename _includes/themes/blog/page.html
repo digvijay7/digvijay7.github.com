@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+  <h1>{{ page.title }} {% if page.tagline %} <br /> <small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
 
 <div class="row">
@@ -7,3 +7,9 @@
     {{ content }}
   </div>
 </div>
+
+<style>
+  .page-header {
+    margin-top: 20px;
+  }
+</style>

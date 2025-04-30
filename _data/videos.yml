@@ -1,0 +1,86 @@
+# Video data for portfolio
+# Categories: educational, creative, technical
+
+- id: 1
+  title: "प्रलय: मर्कंडेय की भविष्यवाणी और नई दुनिया की शुरुआत | The End of the World"
+  link: "https://youtu.be/FMiu0IJxxHU"
+  summary: "प्रलय एक ऐसी कथा है जो ऋषि मर्कंडेय की भविष्यवाणी और उसके सजीव होते दृश्यों पर आधारित है। मर्कंडेय, जो समय की धारा को पार कर चुके हैं, पृथ्वी के विनाश और पुनर्जन्म की गाथा सुनाते हैं। कहानी की शुरुआत बर्फीली पहाड़ियों में मर्कंडेय की चेतावनी से होती है, जहाँ वे पृथ्वी पर आने वाले संकटों का वर्णन करते हैं।"
+  channel: "Krishna Musings"
+  category: "Hindi"
+
+- id: 2
+  title: "हर आत्मा को उसके कर्मों का परिणाम मिलेगा | The Final Judgment: Yamraj's Wrath Awaits"
+  link: "https://youtu.be/_dpmja4FSVI"
+  summary: "यमराज की चेतावनी: कर्मों का वजन वीडियो आपको यमलोक के रहस्यमय संसार में लेकर जाता है, जहाँ यमराज मृत्यु के देवता के रूप में मानवता को उसके कर्मों का फल प्राप्त होने की सच्चाई बताते हैं। यह वीडियो हमें यह याद दिलाता है कि हर व्यक्ति को उसके कर्मों का हिसाब देना होगा, चाहे वह अच्छे हों या बुरे।"
+  channel: "Krishna Musings"
+  category: "Hindi"
+
+- id: 3
+  title: "Kalki The Last Avatar | Epic Movie Trailer | End of Kaliyuga Begins"
+  link: "https://youtu.be/eNwosEBjWmc"
+  summary: "426,874 years from now, darkness reigns supreme. The world burns, hope fades, and evil triumphs as Kaliyuga reaches its catastrophic end. But in the face of despair, a prophecy awakens—Lord Kalki, the final avatar of Vishnu, rises to restore balance, destroy evil, and usher in a new cosmic cycle."
+  channel: "Krishna Musings"
+  category: "Hindi"
+
+- id: 4
+  title: "हमारे भूले हुए देवता: जब सूर्य देव जागते हैं | सूर्य देव: दिव्य न्याय"
+  link: "https://youtu.be/jsGOxE3-wp4"
+  summary: "Experience the awe-inspiring tale of cosmic reckoning in SURYA DEVA: When The Sun God Awakens. This epic narrative explores what happens when the Sun - not merely a star, but a conscious deity - finally loses patience with humanity's destructive path."
+  channel: "Krishna Musings"
+  category: "Hindi"
+
+- id: 5
+  title: "Game of Thrones Fan Fiction: Jon & Daenerys' Love, Victory, and Wedding at Winterfell | Episode 1"
+  link: "https://youtu.be/c9IsIG6ZOBU"
+  summary: "Witness the breathtaking finale of this Game of Thrones Fan Fiction where Jon Snow and Daenerys Targaryen's journey takes a heartwarming turn. In a pivotal moment, Jon asks Daenerys to choose mercy and forgiveness, leading to their joint rule over the Seven Kingdoms."
+  channel: "The Epic Loom"
+  category: "creative"
+
+- id: 6
+  title: "Jon Snow & Daenerys' Epic New Year's Party | Game of Thrones Celebration #jonsnowedit"
+  link: "https://youtu.be/YMq-fvGcmN4"
+  summary: "Celebrate New Year's like never before with Jon Snow and Daenerys Targaryen as they throw an epic party in Winterfell! Watch the King in the North and the Mother of Dragons light up the Seven Kingdoms with Tyrion's legendary toasts, Arya's thrilling sword tricks, and a jaw-dropping dragon fireworks display."
+  channel: "The Epic Loom"
+  category: "creative"
+
+- id: 7
+  title: "Amyloidosis | Awareness | Amyloidosis Support Group Of India"
+  link: "https://youtu.be/J-hSugrkDnA"
+  summary: "Awareness video about Amyloidosis for the Amyloidosis Support Group of India."
+  channel: "Xyzion AI Studios"
+  category: "educational"
+
+- id: 8
+  title: "🎉 Happy New Year 2025 | Hope, Love, Kindness & Togetherness | Xyzion AI Studios! 🎉"
+  link: "https://youtu.be/u6Ttk4YL81k"
+  summary: "We're kicking off the year with a special creation made using Dream Pixel, our AI-powered video storytelling tool. This video reflects our hopes, dreams, and boundless creativity for the year ahead."
+  channel: "Xyzion AI Studios"
+  category: "creative"
+
+- id: 9
+  title: "Rrun Yodha"
+  link: "https://youtu.be/bYSpq_AgMDk"
+  summary: "Promo video for sports events for kids"
+  channel: "Xyzion AI Studios"
+  category: "promos"
+
+- id: 10
+  title: "Unleash the Groove: boAt Airdopes 311 Pro & Party Pal 400 Ad - Feel the Sound! #specad"
+  link: "https://youtu.be/9JIHTRCIqmQ"
+  summary: "Dive into the World of Premium Audio with boAt! Get ready to experience sound like never before with boAt Airdopes 311 Pro and boAt Party Pal 400!"
+  channel: "Xyzion AI Studios"
+  category: "promos"
+
+- id: 11
+  title: "💫The Starlight Garden: A Magical Bedtime Story for Children | Learn About Nurturing Nature☘️"
+  link: "https://youtu.be/p_VeO5cjdew"
+  summary: "Join Luna on a magical adventure in The Starlight Garden, where a little girl discovers the true meaning of care and dedication! In this enchanting bedtime story, Luna discovers that the magical creatures in her garden are losing their glow."
+  channel: "Kids"
+  category: "creative"
+
+- id: 12
+  title: "🎮 Evolution of Video Games: Mario To Minecraft! ⛏️"
+  link: "https://youtu.be/mvIULhnctoU"
+  summary: "The world of video games has come a long way since the humble beginnings of Pac-Man and the early arcade games. Join us on an unforgettable journey through time as we explore the evolution of video games, decade by decade."
+  channel: "Wanderlens AI"
+  category: "documentary"

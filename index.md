@@ -1,8 +1,9 @@
 ---
 layout: clean-page
-title: Digvijay's AI Portfolio
+title: Digvijay Singh
 tagline: Gen AI Content Creator
 ---
+
 {% include JB/setup %}
 
 <div class="home-hero">
@@ -32,56 +33,8 @@ body {
   padding-bottom: 80px; /* Space for footer */
 }
 
-.navbar {
-  background-color: rgba(18, 18, 18, 0.9);
-  padding: 20px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 0;
-  align-items: center;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-item {
-  margin-left: 20px;
-}
-
-.navbar-brand {
-  font-family: 'Syncopate', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  transition: all 0.3s ease;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #c5a47e;
-}
-
 .home-hero {
-  height: 100vh;
+  height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -93,10 +46,13 @@ body {
   background-blend-mode: overlay;
   position: relative;
   overflow: hidden;
+  margin-top: 60px; /* Make space for fixed navbar */
 }
 
 .artistic-overlay {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -201,10 +157,9 @@ body {
   color: rgba(255, 255, 255, 0.7);
   padding: 30px 0;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  z-index: 100;
+  margin-top: 50px;
 }
 
 @keyframes fadeInUp {
@@ -229,16 +184,6 @@ body {
   
   .hero-text {
     font-size: 1rem;
-  }
-  
-  .navbar-nav {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .nav-item {
-    margin-left: 0;
-    margin-bottom: 10px;
   }
 }
 </style>
