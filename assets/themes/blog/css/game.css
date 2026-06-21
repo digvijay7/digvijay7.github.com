@@ -1,0 +1,22 @@
+/* ===== Game Fullscreen Layout ===== */
+#game-world {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001; /* above navbar (1000) — game is fully immersive */
+  background: #0d0d1a;
+  overflow: hidden;
+}
+
+#game-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
