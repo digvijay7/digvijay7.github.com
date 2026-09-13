@@ -139,19 +139,35 @@ section.blk{position:relative;z-index:2;padding:var(--pad-y) 0;border-top:1px so
 .sec-head .lede{margin-top:16px;color:var(--ink-2);font-size:16px;max-width:46ch}
 
 /* ---------- work gallery ---------- */
-.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.work-head{display:flex;align-items:center;gap:16px;margin:0 0 20px}
+.work-head-label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);white-space:nowrap}
+.work-head-rule{flex:1;height:1px;background:var(--rule)}
+.work-head-count{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.work-grid{display:grid;gap:18px}
+.work-grid + .work-head{margin-top:46px}
+.work-grid-v{grid-template-columns:repeat(5,1fr)}
+.work-grid-w{grid-template-columns:repeat(2,1fr)}
 .work-card{position:relative;border:1px solid var(--rule);border-radius:10px;overflow:hidden;background:var(--paper);
   transition:transform .6s var(--ease-cine),border-color .4s}
 .work-card:hover{transform:translateY(-6px);border-color:var(--gold-deep)}
 .work-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#000}
+.work-grid-v .work-thumb{aspect-ratio:9/16}
 .work-thumb img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease-cine),filter .6s;filter:saturate(1.02)}
 .work-card:hover .work-thumb img{transform:scale(1.04)}
 .work-thumb::after{content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,transparent 40%,rgba(6,6,10,.82) 100%)}
+.work-grid-v .work-thumb::after{
+  background:linear-gradient(180deg,transparent 34%,rgba(6,6,10,.88) 100%)}
 .work-badge{position:absolute;top:14px;left:14px;z-index:2;font-family:var(--mono);font-size:10px;
   letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:rgba(6,6,10,.55);
   border:1px solid var(--rule-strong);border-radius:999px;padding:5px 11px;backdrop-filter:blur(6px)}
 .work-meta{position:absolute;left:18px;right:18px;bottom:16px;z-index:2}
+.work-grid-v .work-meta{left:14px;right:14px;bottom:13px}
+.work-grid-v .work-meta h3{font-size:15px}
+.work-grid-v .work-meta p{font-size:12px;line-height:1.45;margin-top:2px}
+.work-grid-v .work-meta .watch{font-size:10px;margin-top:7px}
+.work-grid-v .work-badge{top:11px;left:11px;font-size:9px;padding:4px 9px}
 .work-meta h3{font-size:19px;font-weight:500;letter-spacing:-.01em}
 .work-meta p{color:var(--ink-2);font-size:13px;margin-top:3px;max-width:42ch}
 .work-meta .watch{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
@@ -220,10 +236,13 @@ section.blk{position:relative;z-index:2;padding:var(--pad-y) 0;border-top:1px so
 @keyframes xz-aurora{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 
 /* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .work-grid-v{grid-template-columns:repeat(3,1fr)}
+}
 @media (max-width:860px){
   .nav-links{display:none}
   .sec-head{grid-template-columns:1fr;gap:18px;align-items:start}
-  .work-grid{grid-template-columns:1fr}
+  .work-grid-v,.work-grid-w{grid-template-columns:repeat(2,1fr)}
   .about-grid{grid-template-columns:1fr;gap:36px}
   .cap-grid{grid-template-columns:1fr}
   .stack-row .lbl{width:100%}
